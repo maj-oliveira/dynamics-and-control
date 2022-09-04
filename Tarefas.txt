@@ -1,0 +1,4 @@
+[] - Adicionar créditos na pasta FEM
+[] - Adicionar créditos na pasta aerodynamics
+[] - Atualizar markdown com imagens
+[] - Adicionar créditos na Polimi

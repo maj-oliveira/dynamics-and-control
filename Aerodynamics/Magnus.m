@@ -4,8 +4,9 @@
 % Cilindro com efeito Magnus e aerofólio de Joukowski
 %##################################################
 
-clear all
 clc
+clear all
+close all
 
 % parâmetros do aerofólio
 
