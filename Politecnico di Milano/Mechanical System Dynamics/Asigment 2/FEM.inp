@@ -1,0 +1,43 @@
+! FEM
+! 		---------------------------------------------
+! list of nodes :
+*NODES
+! n. of node - constraint code (x,y,theta) - x coordinate- y coordinate.     
+1				    0 0 0   		0.0	      1.9   	   
+2				    0 0 0   		0.4	      1.9   	   
+3				    0 0 0   		2.2	      1.9   	   
+4				    0 0 0   		4.0	      1.9   	   
+5				    0 0 0   		1.2	      1.425   	 
+6				    0 0 0   		2.0	      0.95
+7				    0 0 0		1.473         0.7
+8				    0 0 0               2.56          0.7
+9                                   0 0 0               2.2           0.4
+10                                  0 0 0               4.0           0.4
+11                                  0 0 0               0.0           0.0   
+12                                  1 0 1               4.0           0.0     	   	
+! end card *NODES
+*ENDNODES
+! 		---------------------------------------------
+! list of elements :
+*BEAMS
+! n. of elem. - n. of input node - n. of output node - pr
+1       1      2    1 
+2       2      3    1
+3       3      4    1
+4       11     7    1
+5       7      6    1
+6       6      4    1
+7       2      5    2
+8       5      6    2
+9       7      8    2
+10      9      8    3
+11      8      4    3
+12      9      10   3
+*ENDBEAMS
+! properties for each beam
+! n. of property - m - EA - EJ
+*PROPERTIES
+1      2.8425    7.5071e7   3.1605e4
+2      1.4151    3.7374e7   6.9352e3
+3      0.8638    2.2813e7   1.5812e3
+*ENDPROPERTIES
